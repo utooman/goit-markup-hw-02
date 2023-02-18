@@ -1,0 +1,181 @@
+body {
+font-family: "Roboto", sans-serif;
+color: #434455;
+background-color: #E5E5E5;
+}
+
+:root {
+--primary-text-color: #434455;
+--title-text-color: #2E2F42;
+}
+
+li {
+list-style: none;
+}
+
+/* Header */
+
+.header {
+
+background: #FFFFFF;
+
+}
+
+a:hover,
+a:focus {
+color: #404BBF;
+}
+
+button {
+color: #FFFFFF;      
+background-color:#4D5AE5; 
+   
+}
+
+button:hover,
+button:focus {
+cursor: pointer;
+color: #FFFFFF;
+background-color:#404BBF;
+}
+
+.web {
+color:#4D5AE5;
+width: 44px;
+height: 24px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+}
+
+
+.studio {
+color:#2E2F42;
+width: 71px;
+height: 24px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+}
+
+.navigation {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--title-text-color);
+}
+
+
+.mail{
+color: var(--primary-text-color);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+}
+
+
+.tel {
+color: var(--primary-text-color);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+}
+
+
+.text-banner{
+color: #FFFFFF;
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+text-align: center;
+letter-spacing: 0.02em;
+}
+
+.banner {
+background: #2E2F42;
+width: 1440px;
+height: 603px;
+}
+
+
+.skills {
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;   
+color: var(--title-text-color);
+}
+
+
+.skills-text {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
+}
+
+.our-team {
+background: #F4F4FD;
+}
+
+h2 {
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--title-text-color);
+    
+}
+
+.employee-name {
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--title-text-color);
+}
+
+.job-title {
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
+}
+
+.footer {  
+background: #2E2F42;
+}
+
+.studio-footer {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.16;  
+letter-spacing: 0.03em;
+color: #F4F4FD;
+}
+
+/* footer */
+
+footer p {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #E7E9FC;
+}
