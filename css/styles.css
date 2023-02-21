@@ -1,12 +1,19 @@
 body {
 font-family: "Roboto", sans-serif;
 color: #434455;
-background-color: #E5E5E5;
+background-color: #FFFFFF;
 }
 
 :root {
 --primary-text-color: #434455;
 --title-text-color: #2E2F42;
+--dark-background-color: #2E2F42;
+--white-background-color: #E5E5E5;
+--cloud-background-color: #F4F4FD;
+--white-color:#FFFFFF;
+--iris: #4D5AE5;
+--ocean: #404BBF;
+--cornflower: #E7E9FC;
 }
 
 li {
@@ -15,28 +22,32 @@ list-style: none;
 
 /* Header */
 
-.header {
-
-background: #FFFFFF;
-
+a {
+text-decoration: none;
 }
 
 a:hover,
 a:focus {
-color: #404BBF;
+color: var(--ocean);
 }
 
-button {
-color: #FFFFFF;      
-background-color:#4D5AE5; 
-   
+.button {
+color: var(--white-color);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+background-color: var(--iris); 
+letter-spacing: 0.04em;
 }
 
-button:hover,
-button:focus {
+.button:hover,
+.button:focus {
 cursor: pointer;
-color: #FFFFFF;
-background-color:#404BBF;
+color: var(--white-color);
+background-color: var(--ocean);
+
 }
 
 .web {
@@ -48,6 +59,7 @@ font-style: normal;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.33;
+letter-spacing: 0.03em;
 }
 
 
@@ -60,6 +72,7 @@ font-style: normal;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.33;
+letter-spacing: 0.03em;
 }
 
 .navigation {
@@ -71,40 +84,31 @@ color: var(--title-text-color);
 }
 
 
-.mail{
-color: var(--primary-text-color);
+.contakt-link {
+color: var(--title-text-color);
 font-style: normal;
-font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
-}
-
-
-.tel {
-color: var(--primary-text-color);
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-}
-
-
-.text-banner{
-color: #FFFFFF;
-font-style: normal;
-font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
-text-align: center;
-letter-spacing: 0.02em;
 }
 
 .banner {
-background: #2E2F42;
-width: 1440px;
-height: 603px;
+background: var(--dark-background-color);
+
 }
 
+
+.text-banner {
+color: var(--white-color);
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+letter-spacing: 0.02em;
+}
+
+
+.section-skills {
+background:var(--white-background-color)    
+}
 
 .skills {
 font-style: normal;
@@ -123,20 +127,36 @@ letter-spacing: 0.02em;
 color: var(--primary-text-color);
 }
 
-.our-team {
-background: #F4F4FD;
+.section-what-are-we-doing {
+background: var(--white-background-color)
 }
 
-h2 {
+.section-our-team {
+background: var(--cloud-background-color);
+}
+
+.title-what-are-we-doing {
 font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
-text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--title-text-color);   
+}
+
+.title-our-team {
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--title-text-color);
-    
+}
+
+.item-our-team {
+background-color: var(--white-color);
 }
 
 .employee-name {
@@ -144,7 +164,6 @@ font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
-text-align: center;
 letter-spacing: 0.02em;
 color: var(--title-text-color);
 }
@@ -152,13 +171,41 @@ color: var(--title-text-color);
 .job-title {
 font-size: 16px;
 line-height: 1.5;
-text-align: center;
 letter-spacing: 0.02em;
 color: var(--primary-text-color);
 }
 
+.main-section {
+background-color: var(--white-background-color) ;
+}
+
+.filter-button {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1,5;
+color: var(--iris);
+background-color: var(--cloud-background-color);
+letter-spacing: 0.04em;
+}
+
+
+.filter-button:hover,
+.filter-button:focus {
+cursor: pointer;
+color: var(--white-color);
+background-color: var(--ocean);
+}
+
+.our-keys-item {
+background: var(--white-color);
+}
+
+/* footer */
+
 .footer {  
-background: #2E2F42;
+background: var(--dark-background-color);
 }
 
 .studio-footer {
@@ -168,14 +215,26 @@ font-weight: 800;
 font-size: 18px;
 line-height: 1.16;  
 letter-spacing: 0.03em;
-color: #F4F4FD;
+color: var(--cloud-background-color);
 }
 
-/* footer */
 
-footer p {
+.text-footer {
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #E7E9FC;
+color: var(--cornflower);
+}
+
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
 }
