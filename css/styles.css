@@ -51,7 +51,7 @@ background-color: var(--ocean);
 }
 
 .web {
-color:#4D5AE5;
+color:var(--iris);
 width: 44px;
 height: 24px;
 font-family: 'Raleway';
@@ -64,7 +64,7 @@ letter-spacing: 0.03em;
 
 
 .studio {
-color:#2E2F42;
+color:var(--title-text-color);
 width: 71px;
 height: 24px;
 font-family: 'Raleway';
